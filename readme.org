@@ -1,0 +1,11 @@
+* Streamlining Arch linux installation
+
+
+** Problems:
+*** Unable to unlock databases:
+  rm /var/lib/pacman/db.lck # https://archived.forum.manjaro.org/t/how-to-solve-the-unable-to-lock-database-or-failed-to-synchronize-any-databases-errors/3939/2
+
+
+** Resources
+*** Fdisk
+https://linuxize.com/post/fdisk-command-in-linux/

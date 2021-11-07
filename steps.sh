@@ -30,6 +30,15 @@ echo "archdev" > /etc/hostname # TODO change
 mkinitcpio -P
 
 
+#mount /dev/sda1 /boot
+yes | pacman -Sy grub os-prober
 
+arch-chroot /mnt /bin/bash
 
+yes | pacman -Sy wpa_supplicant wireless_tools networkmanager
+systemctl enable NetworkManager.service
 
+grub-install  /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+passwd

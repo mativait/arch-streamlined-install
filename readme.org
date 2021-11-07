@@ -1,5 +1,13 @@
 * Streamlining Arch linux installation
 
+** Getting started
+   1. Create bootable Arch linux usb stick
+   2. Boot the machine using live usb stick
+   3. Enable network connection
+   4. Set temporary root password using 'passwd'
+   5. Find out machine's IP address 'ip addr ls'
+   6. On remote machine run 'ssh root@IP < steps.sh'
+   7. Final step in steps.sh is to reset root password for new environment.
 
 ** Problems:
 *** Unable to unlock databases:
